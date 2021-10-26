@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProdutoCrud.Dados\ProdutoCrud.Dados.csproj" />
+    <ProjectReference Include="..\ProdutoCrud.Utils\ProdutoCrud.Utils.csproj" />
+  </ItemGroup>
+
+</Project>

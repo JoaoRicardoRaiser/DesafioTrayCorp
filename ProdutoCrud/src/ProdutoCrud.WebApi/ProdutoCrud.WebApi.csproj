@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentMigrator" Version="3.3.1" />
+    <PackageReference Include="FluentMigrator.Runner" Version="3.3.1" />
+    <PackageReference Include="FluentMigrator.Runner.Postgres" Version="3.3.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProdutoCrud.Database\ProdutoCrud.Database.csproj" />
+    <ProjectReference Include="..\ProdutoCrud.IoC\ProdutoCrud.IoC.csproj" />
+    <ProjectReference Include="..\ProdutoCrud.Services\ProdutoCrud.Services.csproj" />
+    <ProjectReference Include="..\ProdutoCrud.Utils\ProdutoCrud.Utils.csproj" />
+  </ItemGroup>
+
+</Project>
