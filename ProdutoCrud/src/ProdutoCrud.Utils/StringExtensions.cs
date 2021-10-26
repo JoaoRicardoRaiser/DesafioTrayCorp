@@ -3,17 +3,13 @@
     public static class StringExtensions
     {
         public static string PrimeiraMaiuscula(this string strString)
-        {
-
-            string strResult = "";
-
-            if (strString?.Length > 0)
+        {   
+            if (!string.IsNullOrEmpty(strString))
             {
-                strResult += strString.Substring(0, 1).ToUpper();
-
-                strResult += strString[1..].ToLower();
+                return char.ToUpper(strString[0]) + strString.Substring(1);
             }
-            return strResult;
+
+            return string.Empty;
         }
     }
 }
